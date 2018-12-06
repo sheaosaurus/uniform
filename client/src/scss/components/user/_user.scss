@@ -1,0 +1,51 @@
+.user {
+    display:flex;
+    margin: 5rem 4rem;
+
+    &__nav {
+        border-right: 1px solid #f8f8f8;
+
+        &-links {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #dddddd;
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 1rem 0px;
+            width: 28rem;
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+        padding: 0 0 0 3rem;
+        
+        &-panel {
+            background: #f8f8f8;
+            padding: 20px;
+            margin-top: 20px;
+
+            h1 {
+                margin: 0 0 2.5rem 0;
+                line-height: 1.5;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+            }
+
+            span {
+                display: block;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+    &-history {
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ebebeb;
+    }
+}

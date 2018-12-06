@@ -1,0 +1,84 @@
+// COLOR VARIABLES
+$color-primary: #313131;
+
+$color-primary-dark: #313131;
+$color-primary-light-1: #fff;
+
+$color-secondary: #757575;
+$color-background-white: #fff;
+
+$color-accent: #607D8B;
+
+
+
+// FONT VARIABLES
+$font-primary:'Poppins', sans-serif;;
+
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-primary;
+    background-color: $color-background-white;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+.page__container {
+	width: 100%;
+	min-height: 95vh;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 0 1 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+.header--block {
+    width: 100%;
+    height: 8vh;
+    background: $color-primary-dark;
+}

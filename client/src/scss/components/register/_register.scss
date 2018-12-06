@@ -1,0 +1,27 @@
+.register__login {
+    display: flex;
+    border: 1px solid #999592;
+    border-top: 5px solid #999592;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 8rem 0 10rem 0;
+    padding: 3rem 2rem;
+
+    &-left,
+    &-right {
+        flex: 1 0 50%;
+    }
+
+    h2 {
+        margin: 2rem 0;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 300;
+        width: 60%;
+    }
+
+}
+
+
