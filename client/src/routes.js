@@ -16,6 +16,7 @@ import Story from './components/story/story';
 import UserDashboard from './components/user/userDashboard';
 import AddProduct from './components/user/admin/addProduct';
 import ManageCategories from './components/user/admin/manageCategories';
+import PageNotFound from './components/utils/pageNotFound';
 
 
 
@@ -43,6 +44,7 @@ const Routes = ({location}) => {
                             <Route path="/ourstory" exact component={Auth(Story,null)}/>
                             <Route path="/shop" exact component={Auth(Shop,null)}/>
                             <Route path="/product/:id" exact component={Auth(ProductPage,null)}/>
+                            <Route component={Auth(PageNotFound)}/>
                         </Switch>  
                     </Layout>            
                     </section>
